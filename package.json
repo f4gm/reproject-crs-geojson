@@ -2,6 +2,10 @@
   "name": "reproject-crs-geojson",
   "version": "1.0.0",
   "author": "Fernando Andrés Giraldo Mejía (https://gisfer.net)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f4gm/reproject-crs-geojson"
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "files": [
