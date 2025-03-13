@@ -1,0 +1,32 @@
+{
+  "name": "reproject-crs-geojson",
+  "version": "1.0.0",
+  "author": "Fernando Andrés Giraldo Mejía (https://gisfer.net)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup && npx typedoc"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@turf/turf": "^7.2.0",
+    "proj4": "^2.15.0",
+    "proj4-list": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/proj4": "^2.5.6",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "typedoc": "^0.27.9",
+    "typescript": "^5.8.2"
+  }
+}
