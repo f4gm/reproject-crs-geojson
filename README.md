@@ -1,16 +1,24 @@
 # reproject-crs-geojson
 
+![npm license](https://img.shields.io/npm/l/reproject-crs-geojson)
+![npm version](https://img.shields.io/npm/v/reproject-crs-geojson)
+![npm downloads](https://img.shields.io/npm/dt/reproject-crs-geojson)
+
 Small package to reproject the vertex coordinates of a GeoJSON between coordinate reference systems (CRS).
 
 Accepts objects of type Feature, FeatureCollection, Geometry, or GeometryCollection, as well as all geometry types: Point, MultiPoint, LineString, MultiLineString, Polygon, MultiPolygon, and GeometryCollection.
 
 The [Turf.js](https://turfjs.org/docs/api/coordEach) `coordEach` function is used to iterate through all the object's coordinate pairs and reproject them with [Proj4js](http://proj4js.org/). Additionally, to make CRS selection easier, [proj4-list](https://www.npmjs.com/package/proj4-list) is added.
 
+# Documentation
+
+[https://f4gm.github.io/reproject-crs-geojson/](https://f4gm.github.io/reproject-crs-geojson/)
+
 # Usage
 
 ## Install the package
 
-```
+```sh
 npm install reproject-crs-geojson
 ```
 
