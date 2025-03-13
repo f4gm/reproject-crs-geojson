@@ -16,7 +16,7 @@ npm install reproject-crs-geojson
 
 ## Imports
 
-```
+```javascript
 import {
   reprojectGeoJSON,
   getEPSG,
@@ -29,7 +29,7 @@ import {
 
 The `reprojectGeoJSON` it does not affect the properties, geometry type or number of vertices, it only converts the CRS.
 
-```
+```javascript
 import { reprojectGeoJSON } from "reproject-crs-geojson";
 
 const Point = {
@@ -61,7 +61,7 @@ console.log(converted);
 
 You can also include the string PROJ.4:
 
-```
+```javascript
 import { reprojectGeoJSON } from "reproject-crs-geojson";
 
 const epsg_3115 = "+proj=tmerc +lat_0=4.59620041666667 +lon_0=-77.0775079166667 +k=1 +x_0=1000000 +y_0=1000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs";
@@ -83,7 +83,7 @@ const converted = reprojectGeoJSON(
 
 To convert directly to WGS84 (EPSG:4326) you can use the function `toWGS84`:
 
-```
+```javascript
 import { toWGS84 } from "reproject-crs-geojson";
 
 const epsg_3115 = "+proj=tmerc +lat_0=4.59620041666667 +lon_0=-77.0775079166667 +k=1 +x_0=1000000 +y_0=1000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +type=crs";
@@ -108,7 +108,7 @@ console.log(converted);
 
 If you want to know if an epsg code is in [proj4-list](https://www.npmjs.com/package/proj4-list):
 
-```
+```javascript
 import { epsgExist } from "reproject-crs-geojson";
 
 console.log(epsgExist("foo"));
@@ -120,7 +120,7 @@ console.log(epsgExist("EPSG:3115"));
 
 If you need the PROJ.4 string:
 
-```
+```javascript
 import { getEPSG } from "reproject-crs-geojson";
 
 console.log(getEPSG("EPSG:4326"));
